@@ -63,16 +63,7 @@ class Particle:
             self.p_best = self.path[:]
             self.p_best_distance = distance
 
-    def repair_path(self, path):
-        visited = set()
-        new_path = []
-        for city in path:
-            if city not in visited:
-                visited.add(city)
-                new_path.append(city)
-        missing_cities = set(range(city_num)) - visited
-        new_path.extend(missing_cities)
-        return new_path
+
 
 # PSO类
 class PSO:
