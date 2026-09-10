@@ -19,7 +19,7 @@ distance_y = [random.randint(50, 550) for _ in range(city_num)]
 distance_graph = [[0.0 for _ in range(city_num)] for _ in range(city_num)]
 for i in range(city_num):
     for j in range(city_num):
-        distance_graph[i][j] = ((distance_x[i] - distance_x[j]) ** 2 + (distance_y[i] - distance_y[j]) ** 2) ** 0.5
+        distance_graph[i][j] = (distance_y[i] - distance_y[j]) ** 2) ** 0.5
 
 # 路径距离计算函数
 def calculate_distance(path):
