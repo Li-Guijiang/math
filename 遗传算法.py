@@ -115,10 +115,7 @@ class TSPVisualizer:
     def draw_path(self, path):
         """ 绘制路径 """
         self.canvas.delete("path")
-        for i in range(-1, city_num - 1):
-            x1, y1 = self.nodes[path[i]]
-            x2, y2 = self.nodes[path[i + 1]]
-            self.canvas.create_line(x1, y1, x2, y2, fill="blue", tags="path")
+      
 
     def run(self):
         """ 运行遗传算法并可视化路径 """
